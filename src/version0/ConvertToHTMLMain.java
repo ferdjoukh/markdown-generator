@@ -28,11 +28,11 @@ public class ConvertToHTMLMain {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Path to .md file to convert ?");
 		String path = sc.nextLine();
-		path = sc.nextLine();
 		
 		MarkdownToHTMLConverter mc = new MarkdownToHTMLConverter(path);
 		
 		mc.convert();
+		System.out.println("File successfully converted to html.");
 		
 		mc.close();
 		sc.close();
