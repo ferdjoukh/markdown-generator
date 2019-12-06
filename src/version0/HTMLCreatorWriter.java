@@ -82,7 +82,9 @@ public class HTMLCreatorWriter extends FileCreatorWriter {
 	 */
 	public void writeList(ArrayList<String> lines) {
 		for(String s : lines) {
-			super.writeLine("<li>"+s+"</li>");
+			super.writeLine("<li>");
+			this.writeLine(s);
+			super.writeLine("</li>");
 		}
 	}
 	
