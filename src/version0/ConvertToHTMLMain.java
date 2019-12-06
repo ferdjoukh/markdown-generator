@@ -26,7 +26,7 @@ public class ConvertToHTMLMain {
 	public static void main(String[] args) throws IOException {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Path to .md file to convert ?");
+		System.out.println("Path to .md file to convert ? Ex: C:/User/Files/name.md");
 		String path = sc.nextLine();
 		
 		MarkdownToHTMLConverter mc = new MarkdownToHTMLConverter(path);
